@@ -7,22 +7,26 @@
     <meta name="description" content="Percetakan berkualitas tinggi dengan hasil maksimal. Cetak banner, spanduk, undangan, buku, dan lebih banyak lagi dengan teknologi cetak terdepan.">
     <meta name="keywords" content="percetakan, cetak banner, cetak spanduk, undangan, buku, Jakarta, kualitas tinggi">
     <meta name="author" content="Percetakan Assidik Creative">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://percetakanassidik.com">
     <meta property="og:title" content="Percetakan Assidik Creative - Solusi Cetak Terpercaya">
     <meta property="og:description" content="Percetakan profesional dengan kualitas terbaik di Jakarta. Spesialis banner, spanduk, undangan, dan berbagai kebutuhan cetak lainnya.">
+    
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://percetakanassidik.com">
     <meta property="twitter:title" content="Percetakan Assidik Creative">
     <meta property="twitter:description" content="Solusi percetakan terpercaya dengan kualitas terbaik di Jakarta.">
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Animasi scroll
     function revealOnScroll() {
         const elements = document.querySelectorAll('.fade-in, .slide-up, .zoom');
         const windowHeight = window.innerHeight;
+        
         elements.forEach(el => {
             const rect = el.getBoundingClientRect();
             if (rect.top < windowHeight - 50) {
@@ -30,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
 });
@@ -56,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .scale-on-hover:hover {
             transform: scale(1.05);
         }
+        
         /* Auto Layout Gallery Grid */
         .gallery-grid {
             display: grid;
@@ -64,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             grid-auto-rows: auto;
             grid-auto-flow: dense;
         }
+        
         /* Auto Layout Service Grid */
         .services-auto-grid {
             display: grid;
@@ -71,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gap: clamp(1.5rem, 4vw, 2rem);
             grid-auto-rows: auto;
         }
+        
         /* Auto Layout Gallery Items */
         .gallery-item {
             position: relative;
@@ -80,18 +88,22 @@ document.addEventListener('DOMContentLoaded', function() {
             aspect-ratio: 4/3;
             min-height: 200px;
         }
+        
         .gallery-item:hover {
             transform: scale(1.03);
         }
+        
         .gallery-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.9s ease;
         }
+        
         .gallery-item:hover .gallery-img {
             transform: scale(1.1);
         }
+        
         /* Auto Layout Responsive Images */
         .responsive-img {
             width: 100%;
@@ -99,11 +111,13 @@ document.addEventListener('DOMContentLoaded', function() {
             max-width: 100%;
             display: block;
         }
+        
         /* Auto Layout Container */
         .auto-container {
             container-type: inline-size;
             width: 100%;
         }
+        
         /* Auto Layout Cards */
         .auto-card {
             display: flex;
@@ -111,22 +125,26 @@ document.addEventListener('DOMContentLoaded', function() {
             height: 100%;
             min-height: 400px;
         }
+        
         .auto-card-content {
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
+        
         /* Auto Layout Spacing */
         .auto-spacing {
             padding: clamp(1rem, 5vw, 3rem);
             margin: clamp(0.5rem, 2vw, 1rem);
         }
+        
         /* Auto Layout Text */
         .auto-text {
             font-size: clamp(0.875rem, 2vw, 1.125rem);
             line-height: 1.6;
         }
+        
         /* Auto Layout Grid for Portfolio */
         .portfolio-auto-grid {
             display: grid;
@@ -135,27 +153,33 @@ document.addEventListener('DOMContentLoaded', function() {
             grid-auto-rows: 300px;
             grid-auto-flow: dense;
         }
+        
         .portfolio-item:nth-child(3n) {
             grid-column: span 2;
             grid-row: span 2;
         }
+        
         @media (max-width: 768px) {
             .portfolio-item:nth-child(3n) {
                 grid-column: span 1;
                 grid-row: span 1;
             }
+            
             .gallery-grid {
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             }
+            
             .services-auto-grid {
                 grid-template-columns: 1fr;
             }
         }
+        
         @media (max-width: 480px) {
             .gallery-grid {
                 grid-template-columns: 1fr;
             }
         }
+        
         /* Auto Layout Flexbox Utilities */
         .flex-auto {
             display: flex;
@@ -164,9 +188,11 @@ document.addEventListener('DOMContentLoaded', function() {
             justify-content: center;
             align-items: stretch;
         }
+        
         .flex-auto > * {
             flex: 1 1 clamp(200px, 30vw, 300px);
         }
+
         /* Tambahkan CSS untuk mode light/dark dan animasi scroll */
         :root {
     --light-bg: #e0e0e0;
@@ -186,7 +212,242 @@ document.addEventListener('DOMContentLoaded', function() {
     color: #e2e8f0;
     transition: background 0.3s, color 0.3s;
   }
-  /* ...rest of your styles... */
+  
+  /* Dark mode untuk elemen-elemen utama dengan kombinasi hitam-biru */
+  body.dark-mode .bg-white {
+    background: linear-gradient(145deg, var(--dark-secondary), var(--dark-accent)) !important;
+    border: 1px solid rgba(30, 64, 175, 0.2);
+  }
+  body.dark-mode .bg-gray-50 {
+    background: linear-gradient(135deg, var(--dark-bg), var(--dark-secondary)) !important;
+  }
+  body.dark-mode .bg-blue-50 {
+    background: linear-gradient(135deg, #1e3a8a, #1e293b) !important;
+  }
+  body.dark-mode .bg-gray-100 {
+    background: linear-gradient(145deg, var(--dark-secondary), var(--dark-accent)) !important;
+  }
+  
+  /* Dark mode untuk teks */
+  body.dark-mode .text-blue-900 {
+    color: #60a5fa !important;
+  }
+  body.dark-mode .text-gray-600 {
+    color: #d1d5db !important;
+  }
+  body.dark-mode .text-gray-800 {
+    color: #f3f4f6 !important;
+  }
+  body.dark-mode .text-gray-900 {
+    color: #f9fafb !important;
+  }
+  body.dark-mode .text-black {
+    color: #f9fafb !important;
+  }
+  
+  /* Dark mode untuk warna biru - ubah biru muda jadi biru tua */
+  body.dark-mode .text-blue-600 {
+    color: #1e40af !important;
+  }
+  body.dark-mode .text-blue-500 {
+    color: #1d4ed8 !important;
+  }
+  body.dark-mode .text-blue-400 {
+    color: #2563eb !important;
+  }
+  body.dark-mode .bg-blue-500 {
+    background-color: #1e40af !important;
+  }
+  body.dark-mode .bg-blue-600 {
+    background-color: #1e3a8a !important;
+  }
+  body.dark-mode .bg-blue-400 {
+    background-color: #1d4ed8 !important;
+  }
+  body.dark-mode .border-blue-500 {
+    border-color: #1e40af !important;
+  }
+  body.dark-mode .border-blue-600 {
+    border-color: #1e3a8a !important;
+  }
+  
+  /* Dark mode untuk header dengan kombinasi hitam-biru */
+  body.dark-mode header {
+    background: linear-gradient(135deg, var(--dark-bg), var(--blue-darker)) !important;
+    border-bottom: 1px solid rgba(30, 64, 175, 0.3);
+    box-shadow: 0 4px 20px rgba(30, 64, 175, 0.2);
+  }
+  
+  /* Dark mode untuk card dan container dengan gradien hitam-biru */
+  body.dark-mode .shadow-md,
+  body.dark-mode .shadow-lg,
+  body.dark-mode .shadow-xl {
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.15), 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  /* Dark mode untuk border dengan aksen biru */
+  body.dark-mode .border,
+  body.dark-mode .border-gray-200,
+  body.dark-mode .border-gray-300 {
+    border-color: rgba(30, 64, 175, 0.3) !important;
+  }
+  
+  /* Dark mode untuk mobile menu */
+  body.dark-mode #mobile-menu {
+    background: linear-gradient(135deg, var(--dark-secondary), var(--dark-accent)) !important;
+    border-top: 1px solid rgba(30, 64, 175, 0.2);
+  }
+  
+  /* Dark mode untuk form elements dengan tema hitam-biru */
+  body.dark-mode input,
+  body.dark-mode textarea,
+  body.dark-mode select {
+    background: linear-gradient(145deg, var(--dark-secondary), var(--dark-accent)) !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(30, 64, 175, 0.3) !important;
+  }
+  
+  body.dark-mode input:focus,
+  body.dark-mode textarea:focus,
+  body.dark-mode select:focus {
+    border-color: var(--blue-dark) !important;
+    box-shadow: 0 0 10px rgba(30, 64, 175, 0.3) !important;
+  }
+  
+  /* Dark mode untuk toggle button dengan aksen biru */
+  body.dark-mode .toggle-mode-btn {
+    background: linear-gradient(145deg, var(--dark-secondary), var(--dark-accent));
+    box-shadow: 0 4px 15px rgba(30, 64, 175, 0.2), 0 2px 8px rgba(0, 0, 0, 0.3);
+    color: #60a5fa;
+    border: 1px solid rgba(30, 64, 175, 0.2);
+  }
+  
+  /* Dark mode untuk hover effects */
+  body.dark-mode .hover\\:bg-gray-100:hover {
+    background-color: #3a3a3a !important;
+  }
+  
+  body.dark-mode .hover\\:bg-blue-50:hover {
+    background-color: #1e3a8a !important;
+  }
+  
+  /* Dark mode untuk hover effects biru */
+  body.dark-mode .hover\\:text-blue-600:hover {
+    color: #1e40af !important;
+  }
+  
+  body.dark-mode .hover\\:text-blue-500:hover {
+    color: #1d4ed8 !important;
+  }
+  
+  body.dark-mode .hover\\:bg-blue-600:hover {
+    background-color: #1e3a8a !important;
+  }
+  
+  body.dark-mode .hover\\:bg-blue-500:hover {
+    background-color: #1e40af !important;
+  }
+  
+  /* Dark mode untuk section testimoni */
+  body.dark-mode #testimonials {
+    background: linear-gradient(135deg, var(--dark-bg), var(--dark-secondary)) !important;
+  }
+  
+  body.dark-mode #testimonials h2 {
+    color: #f8fafc !important;
+  }
+  
+  body.dark-mode #testimonials .text-gray-600 {
+    color: #cbd5e1 !important;
+  }
+  
+  body.dark-mode #testimonials .text-gray-700 {
+    color: #e2e8f0 !important;
+  }
+  
+  body.dark-mode #testimonials .text-gray-900 {
+    color: #f1f5f9 !important;
+  }
+  
+  body.dark-mode #testimonials .bg-gray-50 {
+    background: linear-gradient(145deg, var(--dark-secondary), var(--dark-accent)) !important;
+    border: 1px solid rgba(30, 64, 175, 0.2);
+  }
+  
+  /* Dark mode untuk section portfolio dan trusted by */
+  body.dark-mode .bg-gray-100 {
+    background: linear-gradient(135deg, var(--dark-bg), var(--dark-secondary)) !important;
+  }
+  
+  body.dark-mode .portfolio-item .bg-white,
+  body.dark-mode .bg-white {
+    background: linear-gradient(145deg, var(--dark-secondary), var(--dark-accent)) !important;
+    border: 1px solid rgba(30, 64, 175, 0.2);
+  }
+  
+  body.dark-mode .portfolio-item h3,
+  body.dark-mode .portfolio-item p {
+    color: #e2e8f0 !important;
+  }
+  
+  body.dark-mode .text-gray-900 {
+    color: #f1f5f9 !important;
+  }
+  
+  body.dark-mode .text-gray-700 {
+    color: #e2e8f0 !important;
+  }
+  .toggle-mode-btn {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.2rem;
+    z-index: 9999;
+    background: #ffffff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #4a90e2;
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(5px);
+    transition: all 1s ease-out;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
+  .slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(8px);
+    transition: all 1.2s ease-out;
+  }
+  .slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
+  .zoom {
+    opacity: 0;
+    transform: scale(0.8);
+    filter: blur(10px);
+    transition: all 1s ease-out;
+  }
+  .zoom.visible {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -200,11 +461,12 @@ document.addEventListener('DOMContentLoaded', function() {
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
         </svg>
     </button>
+    
     <!-- Header/Navbar -->
     <header class="sticky top-0 z-50 bg-white shadow-md fade-in">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="logo.png" alt="logo percetakan" class="h-10 mr-2">
+<img src="logo.png" alt="logo percetakan" class="h-10 mr-2">
                 <h1 class="text-xl font-bold text-blue-900">Percetakan Assidik</h1>
             </div>
             <nav class="hidden md:flex space-x-8">
@@ -214,7 +476,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="#contact" class="text-blue-900 hover:text-blue-600 font-medium">Kontak</a>
             </nav>
             <div class="flex items-center space-x-4">
-                <a href="https://wa.me/6281310656020?text=Halo, saya ingin konsultasi tentang layanan percetakan" class="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg transition duration-300 scale-on-hover">
+                <a href="https://wa.me/6281310656020?text=Halo, saya ingin konsultasi tentang layanan percetakan" class="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-full shadow transition duration-300 items-center text-base">
                     <i class="fab fa-whatsapp mr-2 text-lg"></i>
                     Konsultasi
                 </a>
@@ -232,4 +494,650 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="#contact" class="block py-2 text-blue-900 hover:text-blue-600">Kontak</a>
         </div>
     </header>
-<!-- ...rest of your HTML remains unchanged... -->
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-32 slide-up">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-3xl md:text-3xl font-bold mb-4">Selamat datang di Percetakan Assidik - Solusi Cetak Terpercaya dan berkualitas</h2>
+                <p class="text-l mb-6 opacity-85">Kami adalah penyedia layanan percetakan yang berkomitmen untuk memberikan hasil cetak terbaik bagi kebutuhan personal maupun bisnis Anda. Dengan pengalaman bertahun-tahun dan didukung oleh teknologi terkini, kami siap mencetak dengan cepat, presisi,harga yang bersahabat, dan yang paling penting jika anda order di toko kami Gratis Desain lohh!!</p>
+                <p class="text-xl mb-6 opacity-80"><p>
+Jika anda ingin memesan silahkan hubungi nomor dibawah ini ... <br>
+</p></p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="https://wa.me/6281310656020?text=Saya ingin memesan undangan" class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-6 rounded-lg flex items-center justify-center transition duration-300 scale-on-hover">
+                        <i class="fab fa-whatsapp mr-2 text-xl"></i> Hubungi Kami
+                    </a>
+                    <a href="#services" class="bg-white hover:bg-gray-100 text-blue-900 font-medium py-3 px-6 rounded-lg flex items-center justify-center transition duration-300 scale-on-hover">
+                        <i class="fas fa-search mr-2"></i> Lihat Layanan
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.bisnis.com/posts/2017/11/03/705943/cetak.jpg" alt="Pekerja di percetakan sedang memeriksa hasil cetak dengan teliti menggunakan alat pengukur kualitas warna" class="rounded-lg shadow-xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- E-commerce Banner -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-blue-900 mb-4">Belanja Cetakan Online di Toko Kami</h3>
+            <p class="text-gray-600 mb-6">Temukan berbagai produk percetakan siap cetak dengan harga spesial</p>
+            <a href="https://id.shp.ee/iRDGBsP" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full transition duration-300 scale-on-hover">
+                Kunjungi E-Commerce <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+   <!-- Services Section -->
+<section id="services" class="py-16 bg-gray-50 fade-in">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-900 mb-3">Layanan Kami</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Berbagai solusi percetakan berkualitas untuk mendukung bisnis Anda</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+           <!-- Service 1 -->
+<div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300">
+    <div class="h-48 overflow-hidden">
+        <img src="https://3.bp.blogspot.com/-E6QcovTTSOA/Vtfk00k1UcI/AAAAAAAAAUg/yFCsJzvVd1E/s1600/Business%2BCardku%2B1.jpg" alt="Kartu Nama" class="w-full h-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-bold text-blue-900 mb-2">Kartu Nama</h3>
+        <p class="text-gray-600 mb-4">Cetak kartu nama premium dengan berbagai pilihan material dan finishing yang elegan.</p>
+                        <button onclick="showDetail('Menanyai lebih detail tentang Kartu Nama')" class="text-orange-500 font-medium inline-flex items-center">
+              Menanyai Detail <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+    </div>
+</div>
+            
+            <!-- Service 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://1.bp.blogspot.com/-44oZtRJQ4Bg/WwJQL3v_yVI/AAAAAAAAAUQ/CNuVllcIpf4XgLGCEI6vfSiEs7Qs5iZiQCEwYBhgL/s1600/Tujuan%2B%2526%2Bfungsi%2Bpembuatan%2Bspanduk%2Bbanner%2B%25283%2529.png" alt="Banner & Spanduk" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Banner & Spanduk</h3>
+                    <p class="text-gray-600 mb-4">Cetak banner ukuran besar dengan kualitas cetak tinggi dan tahan cuaca.</p>
+<button onclick="showDetail('Menanyai lebih detail tentang Banner & Spanduk')" class="text-orange-500 font-medium inline-flex items-center">
+                        Menanyai Detail <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.mxZavmPHcMWyd1o8N0EF8AHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3.png" alt="Brosur & Katalog" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Brosur & Katalog</h3>
+                    <p class="text-gray-600 mb-4">Desain dan cetak brosur premium untuk mempromosikan produk/jasa Anda.</p>
+<button onclick="showDetail('Menanyai lebih detail tentang Brosur & Katalog')" class="text-orange-500 font-medium inline-flex items-center">
+                        Menanyai Detail <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Service 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://1.bp.blogspot.com/-nPBSWB2prZg/XdNT1cGfp8I/AAAAAAAAFMY/lx59YQ1_5m8HCHsOFo1ga1zCNSWKRmgpACNcBGAsYHQ/s1600/contoh-undangan-pernikahan-sederhana.png" alt="undangan" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">undangan</h3>
+                    <p class="text-gray-600 mb-4">Cetak undangan custom premium dan modern sesuai kemauan anda.</p>
+<button onclick="showDetail('Menanyai lebih detail tentang undangan')" class="text-orange-500 font-medium inline-flex items-center">
+                        Menanyai Detail <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Service 5 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP_VsXNKs6pX1s-hMUdmfZevFv2UCspIaTE8kmM2PWBwtxg4EPTK7rpNDYLcImTWbMEm_EvE-9xlNszD6cli_ip6B5jjmdAQzNvae4KvriNAwCsGBgGquZd2VR1mhK4PUG0M_FWCdOjPIvFJFfdN3mLfqgHH001fjbiEJ861aLTkzm4qa_CZ4nskeI/s2498/stempel%20kotak.jpg" alt="Stempel" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Stempel</h3>
+                    <p class="text-gray-600 mb-4">Custom stempel sesuai kemauan anda.</p>
+<button onclick="showDetail('Menanyai lebih detail tentang Stempel')" class="text-orange-500 font-medium inline-flex items-center">
+                        Menanyai Detail <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Service 6 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://id-test-11.slatic.net/p/9efe403936ba757e926a516850f1fa48.png" alt="Buku & Nota" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Buku & Nota</h3>
+                    <p class="text-gray-600 mb-4">kami menerima pembuatan buku dan nota yang dapat dicustom desainnya sesuai kemauan anda.</p>
+<button onclick="showDetail('Buku & Nota')" class="text-orange-500 font-medium inline-flex items-center">
+                        Menanyai Detail <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Service Details with Slider -->
+<div id="serviceModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-50">
+    <div class="bg-white rounded-2xl p-8 max-w-2xl w-full relative max-h-[80vh] overflow-y-auto">
+        <h2 id="modalTitle" class="text-3xl font-bold text-blue-900 mb-6"></h2>
+        <div class="mb-4 flex flex-col items-center relative">
+<div class="relative w-full h-[32rem] flex items-center justify-center">
+                <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-orange-400 text-blue-900 px-4 py-4 rounded-full shadow-lg z-10 text-2xl">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+<img id="sliderImg" src="" alt="Detail Gambar" class="rounded-xl shadow-xl w-full h-[32rem] object-cover" style="image-rendering: auto;">
+                <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-orange-400 text-blue-900 px-4 py-4 rounded-full shadow-lg z-10 text-2xl">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <span class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gray-900 bg-opacity-70 text-white text-lg px-4 py-2 rounded-xl" id="sliderInfo"></span>
+            </div>
+            <div class="text-base text-gray-700 mb-4 text-center font-medium">
+                Geser gambar untuk melihat contoh hasil cetak dari layanan ini.
+            </div>
+        </div>
+        <p id="modalDescription" class="text-lg text-gray-700 mb-6 p-4 bg-gray-50 rounded-lg leading-relaxed"></p>
+        <div class="flex flex-row space-x-4 justify-center">
+            <a id="waBtn" href="#" target="_blank" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl mb-2 flex items-center text-lg shadow-md">
+                <i class="fab fa-whatsapp mr-2 text-2xl"></i> WhatsApp
+            </a>
+            <button onclick="closeModal()" class="bg-gray-300 hover:bg-gray-400 text-blue-900 font-bold py-3 px-6 rounded-xl mb-2 flex items-center text-lg shadow-md">
+                <i class="fas fa-arrow-left mr-2 text-xl"></i> Kembali
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Gambar untuk setiap layanan
+const serviceImages = {
+    'Menanyai lebih detail tentang Kartu Nama': [
+        'https://maxipro.co.id/wp-content/uploads/2021/11/contoh-kartu-nama-Maxipro-1024x1021.jpg',
+        'https://www.infocetak.com/wp-content/uploads/2018/03/Tips-Membuat-Kartu-Nama-1280px-x-675px-1024x576.jpg',
+        'https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/276561387/original/1e0b567202d7d07ad5064ede1fec439e2cbc75cf/design-business-cards-in-a-unique-minimalist-style.jpg',
+        'https://www.optionstudio.id/storage/2022/08/Thumbnail-Medali-1.jpg', // gambar tambahan
+        'https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/191076136/original/2dd4cbce2a63ee56d787fab80188088fdda0cc96/do-modern-and-professional-business-card-design.jpg'  // gambar tambahan
+    ],
+    'Menanyai lebih detail tentang Banner & Spanduk': [
+        'https://snapy.co.id/gambar/artikel/BANNER-_04.jpg',
+        'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/78e29213-eb1c-433f-a1f8-dc9a9a2c4210/dcfuhpc-0823c56d-9eb4-4b25-a59d-1b44c3cd200a.jpg/v1/fill/w_894,h_894,q_70,strp/roll_up_banner_design_umrah_travel_by_chemproject_dcfuhpc-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzc4ZTI5MjEzLWViMWMtNDMzZi1hMWY4LWRjOWE5YTJjNDIxMFwvZGNmdWhwYy0wODIzYzU2ZC05ZWI0LTRiMjUtYTU5ZC0xYjQ0YzNjZDIwMGEuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.rviGwax7XvHbLb_b8m28vL9p5YzJYRBkXjdW-koxN5o',
+        'https://tse3.mm.bing.net/th/id/OIP.9_NC-lwb8jByZtsAnzi_1gHaEV?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3.png',
+        'https://solusiprinting.com/wp-content/uploads/2019/10/Spanduk-Dengan-Flat-Background-1280px-x-720px-1140x641.jpg', // gambar tambahan
+        'https://ilmuonline.net/wp-content/uploads/2020/10/contoh-spanduk-selamat-datang-format-corel-cdr-scaled.jpg'  // gambar tambahan
+    ],
+    'Menanyai lebih detail tentang Brosur & Katalog': [
+        'https://vilook.id/wp-content/uploads/2022/10/brosur-8.png',
+        'https://1.bp.blogspot.com/-Pf_qUZjWOeo/YC3R2SviY4I/AAAAAAAAAgU/oxHuLYlOQbAPN6iRWU5coYfaLZou7pMEACLcBGAsYHQ/s2048/brosur%2Bsmk.jpg',
+        'https://ritaelfianis.id/wp-content/uploads/2023/07/Pengertian-Katalog-Jenis-jenis-Isi-dan-Fungsinya.jpg',
+        'https://wp.mokapos.com/wp-content/uploads/2023/02/katalog-online-e-catalogue-2.jpg', // gambar tambahan
+        'https://s1.bukalapak.com/bukalapak-kontenz-production/content_attachments/81446/original/desain_katalog_produk.jpeg'  // gambar tambahan
+    ],
+    'Menanyai lebih detail tentang undangan': [
+        'https://pernikahan.or.id/wp-content/uploads/2023/03/7c64fbfdcdbc4aa4a69ce6f8c8804909.jpg',
+        'https://png.pngtree.com/png-clipart/20221020/original/pngtree-undangan-pernikahan--lipat-2-raingkaian-daun-latar-hitam-png-image_8708093.png',
+        'https://img.pikbest.com/02/41/64/76ypIkbEsTUg8.jpg-0.jpg!bw340',
+        'https://img.pikbest.com/05/58/73/64FpIkbEsTeDP.jpg!f305cw', // gambar tambahan
+        'https://img.pikbest.com/origin/05/93/14/056pIkbEsTqc3.jpg!bw700'  // gambar tambahan
+    ],
+    'Menanyai lebih detail tentang Stempel': [
+        'https://jiffy.com.au/wp-content/uploads/2021/02/stamps.jpg',
+        'https://www.baliprintshop.com/image/cache/catalog/product/stamp-print-bali-900x630.webp',
+        'https://5.imimg.com/data5/DC/HY/SI/SELLER-27651885/stamps-500x500.jpg',
+        'https://www.yourprint.in/wp-content/uploads/2019/03/Stamp_inner_cat-640x400.jpg', // gambar tambahan
+        'https://th.bing.com/th/id/R.22ee9b69fa6cdf9c900938b3b19fd361?rik=B9vSxXPup0u0ZA&riu=http%3a%2f%2fwww.newpages2u.com%2fimages%2f1325241418d7f6dd47f73f8ed4fcde5de054fc85a0.jpg&ehk=KvRZbYWmqOrnofRVCPknr9%2bSqY%2fSAyeSb2Gw98UQ7bQ%3d&risl=&pid=ImgRaw&r=0'  // gambar tambahan
+    ],
+    'Buku & Nota': [
+        'https://down-id.img.susercontent.com/file/id-11134207-7r98p-lvgtsnpq8pm7b5',
+        'https://tse2.mm.bing.net/th/id/OIP.fSKOxUgUvnSCJj1eoql5kgHaHa?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3',
+        'https://thedottedpearl.com/wp-content/uploads/2019/03/Ramadhan-Journal-2019-4-768x762.jpeg',
+        'https://tse4.mm.bing.net/th/id/OIP.TrQLbpD5IZY7Gu56ABkwYgHaHa?r=0&cb=thfc1&w=1024&h=1024&rs=1&pid=ImgDetMain&o=7&rm=3', // gambar tambahan
+        'https://cf.shopee.co.id/file/09db6c8c30410484a608b036b0f1dec6'  // gambar tambahan
+    ]
+};
+
+let currentSlide = 0;
+let currentImages = [];
+let currentIndex = 0;
+
+    function showDetail(serviceName) {
+        const details = {
+            'Menanyai lebih detail tentang Kartu Nama': `
+                <strong>Deskripsi Produk:</strong><br>
+                Kartu nama premium dengan desain profesional yang meningkatkan citra bisnis Anda.<br><br>
+                
+                <strong>Spesifikasi Teknis:</strong><br>
+                • Ukuran: 90mm x 55mm (standar)<br>
+                • Material: Art Carton 260gsm / 310gsm / 350gsm<br>
+                • Finishing: Glossy / Matte / Spot UV / Emboss / Foil Stamping<br>
+                • Cetak: Full color (CMYK) 2 sisi atau 1 sisi<br>
+                • Desain: Gratis desain oleh tim profesional kami<br><br>
+                
+                <strong>Estimasi Pengerjaan:</strong><br>
+                • Desain: 1-2 hari kerja<br>
+                • Produksi: 2-3 hari kerja<br>
+                • Total: 2-5 hari kerja (tergantung jumlah dan finishing)
+            `,
+            
+            'Menanyai lebih detail tentang Banner & Spanduk': `
+                <strong>Deskripsi Produk:</strong><br>
+                Banner dan spanduk berkualitas tinggi untuk promosi indoor dan outdoor dengan daya tahan luar biasa.<br><br>
+                
+                <strong>Spesifikasi Teknis:</strong><br>
+                • Ukuran: Custom (60x160cm, 80x180cm, 120x300cm, dll)<br>
+                • Material: Flexi China 280gsm / Flexi Korea 440gsm / Backlite<br>
+                • Finishing: Hemming, Eyelets, Pole Pocket<br>
+                • Tinta: Eco-solvent outdoor grade (tahan UV & cuaca)<br>
+                • Ketebalan: 0.3-0.5mm tahan sobek<br><br>
+                
+                <strong>Estimasi Pengerjaan:</strong><br>
+                • Desain: 1 hari kerja<br>
+                • Produksi: 1-2 hari kerja<br>
+                • Total: 2-3 hari kerja (tergantung ukuran dan jumlah)
+            `,
+            
+            'Menanyai lebih detail tentang Brosur & Katalog': `
+                <strong>Deskripsi Produk:</strong><br>
+                Brosur dan katalog premium untuk presentasi produk dan layanan bisnis Anda secara profesional.<br><br>
+                
+                <strong>Spesifikasi Teknis:</strong><br>
+                • Ukuran: A4 (210x297mm), A5 (148x210mm), custom<br>
+                • Lipatan: Half-fold, Tri-fold, Z-fold, Gate-fold<br>
+                • Material: Art Paper 100gsm / 120gsm / 150gsm<br>
+                • Cetak: Full color 2 sisi / 1 sisi<br>
+                • Finishing: Glossy / Matte / Spot UV / Laminating<br><br>
+                
+                <strong>Estimasi Pengerjaan:</strong><br>
+                • Desain: 1-2 hari kerja<br>
+                • Produksi: 2-4 hari kerja<br>
+                • Total: 2-5 hari kerja (tergantung jumlah halaman dan finishing)
+            `,
+            
+            'Menanyai lebih detail tentang undangan': `
+                <strong>Deskripsi Produk:</strong><br>
+                Undangan custom premium untuk pernikahan, ulang tahun, dan acara spesial lainnya dengan desain elegan.<br><br>
+                
+                <strong>Spesifikasi Teknis:</strong><br>
+                • Ukuran: A5 (148x210mm), A6 (105x148mm), custom<br>
+                • Material: Art Card 260gsm / 310gsm / Linen / Fancy Paper<br>
+                • Cetak: Full color + spot UV / foil stamping<br>
+                • Tambahan: Envelope, RSVP card, map card<br>
+                • Finishing: Hot print, emboss, ribbon, laser cut<br><br>
+                
+                <strong>Estimasi Pengerjaan:</strong><br>
+                • Desain: 2-3 hari kerja<br>
+                • Produksi: 3-5 hari kerja<br>
+                • Total: 3-5 hari kerja (tergantung kompleksitas desain)
+            `,
+            
+            'Menanyai lebih detail tentang Stempel': `
+                <strong>Deskripsi Produk:</strong><br>
+                Stempel custom berkualitas tinggi untuk kebutuhan kantor, usaha, dan personal branding.<br><br>
+                
+                <strong>Spesifikasi Teknis:</strong><br>
+                • Jenis: Stempel karet, stempel flash, stempel warna<br>
+                • Ukuran: Round 20mm, 25mm, 30mm, 40mm / Square custom<br>
+                • Handle: Kayu / plastik / metal<br>
+                • Tinta: Hitam, merah, biru, hijau (refillable)<br>
+                • Desain: Logo, teks, QR code<br><br>
+                
+                <strong>Estimasi Pengerjaan:</strong><br>
+                • Desain: 1 hari kerja<br>
+                • Produksi: 1-2 hari kerja<br>
+                • Total: 2-3 hari kerja
+            `,
+            
+            'Buku & Nota': `
+                <strong>Deskripsi Produk:</strong><br>
+                Buku dan nota custom untuk kebutuhan administrasi, catatan, dan dokumentasi bisnis Anda.<br><br>
+                
+                <strong>Spesifikasi Teknis:</strong><br>
+                • Ukuran: A4, A5, A6, custom<br>
+                • Halaman: 50-200 halaman (custom)<br>
+                • Material: HVS 70gsm / 80gsm / Art Paper<br>
+                • Penjilidan: Spiral, hard cover, soft cover, wire-o<br>
+                • Finishing: Laminating glossy/matte, UV spot<br><br>
+                
+                <strong>Estimasi Pengerjaan:</strong><br>
+                • Desain: 2-3 hari kerja<br>
+                • Produksi: 3-5 hari kerja<br>
+                • Total: 3-5 hari kerja (tergantung jumlah halaman)
+            `
+        };
+
+    document.getElementById('modalTitle').innerText = serviceName;
+    document.getElementById('modalDescription').innerHTML = details[serviceName] || '';
+    document.getElementById('waBtn').href = "https://wa.me/6281310656020?text=Saya ingin menanyai tentang " + encodeURIComponent(serviceName);
+
+    currentImages = serviceImages[serviceName] || [];
+    currentIndex = 0;
+    updateSlider();
+
+    document.getElementById('serviceModal').classList.remove('hidden');
+}
+
+function updateSlider() {
+    const img = document.getElementById('sliderImg');
+    const info = document.getElementById('sliderInfo');
+    if (currentImages.length > 0) {
+        img.src = currentImages[currentIndex];
+        info.textContent = (currentIndex + 1) + ' / ' + currentImages.length;
+    } else {
+        img.src = '';
+        info.textContent = '';
+    }
+}
+
+document.getElementById('prevBtn').onclick = function() {
+    if (currentImages.length > 0) {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        updateSlider();
+    }
+};
+document.getElementById('nextBtn').onclick = function() {
+    if (currentImages.length > 0) {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        updateSlider();
+    }
+};
+
+function closeModal() {
+    document.getElementById('serviceModal').classList.add('hidden');
+}
+</script>
+
+<!-- Tambahkan JS untuk mode dan animasi scroll -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Mode Light/Dark
+    function setMode(mode) {
+      const sunIcon = document.getElementById('sun-icon');
+      const moonIcon = document.getElementById('moon-icon');
+      
+      document.body.classList.remove('light-mode', 'dark-mode');
+      document.body.classList.add(mode);
+      localStorage.setItem('theme', mode);
+      
+      if (mode === 'dark-mode') {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'block';
+      } else {
+        sunIcon.style.display = 'block';
+        moonIcon.style.display = 'none';
+      }
+    }
+    
+    const btn = document.getElementById('toggle-mode-btn');
+    btn.addEventListener('click', function() {
+      const current = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+      setMode(current === 'dark-mode' ? 'light-mode' : 'dark-mode');
+    });
+    
+    // Load mode dari localStorage
+    if (localStorage.getItem('theme') === 'dark-mode') {
+      setMode('dark-mode');
+    } else {
+      setMode('light-mode');
+    }
+    // Animasi scroll
+    function revealOnScroll() {
+      const elements = document.querySelectorAll('.fade-in, .slide-up, .zoom');
+      const windowHeight = window.innerHeight;
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < windowHeight - 40) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  });
+</script>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white slide-up">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Testimoni Pelanggan</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Kepuasan pelanggan adalah prioritas utama kami. Berikut adalah pengalaman mereka yang telah mempercayai layanan percetakan kami.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Pelayanan sangat memuaskan! Banner untuk grand opening toko saya hasilnya sangat bagus dan selesai tepat waktu. Tim Assidik Creative sangat profesional dan responsive. Pasti akan order lagi!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            AS
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Andi Susanto</h4>
+                            <p class="text-gray-600 text-sm">Pemilik Toko Elektronik</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimoni 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Undangan pernikahan kami dicetak dengan kualitas premium dan desainnya exactly sesuai keinginan. Gratis desain juga! Terima kasih Percetakan Assidik, kalian the best!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            SR
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Sari Ramadhani</h4>
+                            <p class="text-gray-600 text-sm">Bride to be</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimoni 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Brosur dan katalog produk untuk bisnis F&B saya hasilnya luar biasa! Warna cetak tajam, kertas berkualitas, dan harga sangat bersahabat. Recommended banget!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            DP
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Dini Pratiwi</h4>
+                            <p class="text-gray-600 text-sm">Owner Cafe & Resto</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimoni 4 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Kartu nama untuk startup saya designnya keren dan berkelas. Material premium tapi harganya terjangkau. Customer service nya juga fast response. Two thumbs up!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            RH
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Rizki Hidayat</h4>
+                            <p class="text-gray-600 text-sm">CEO Startup Tech</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimoni 5 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Sudah 3 tahun jadi pelanggan setia! Dari stempel kantor, spanduk promosi, sampai buku agenda perusahaan selalu order disini. Kualitas konsisten dan pelayanan ramah!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            MF
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Maya Fitriana</h4>
+                            <p class="text-gray-600 text-sm">Manager HRD</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimoni 6 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Event organizer saya sering butuh printing dadakan dengan jumlah banyak. Assidik Creative selalu bisa handle dengan baik, hasil memuaskan dan on time delivery. Mantap!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            BA
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Budi Agustian</h4>
+                            <p class="text-gray-600 text-sm">Event Organizer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-6 text-lg">Bergabunglah dengan pelanggan puas lainnya!</p>
+                <a href="https://wa.me/6281310656020?text=Halo, saya ingin konsultasi tentang layanan percetakan" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center">
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    Konsultasi Gratis Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- Contact & Social Media Section -->
+    <section id="contact" class="py-40 bg-blue-900 text-white slide-up">
+        <div class="container mx-auto px-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-3">Hubungi Kami</h2>
+                <p class="opacity-100 max-w-2xl mx-auto">Kami siap membantu kebutuhan percetakan Anda. Hubungi kami melalui berbagai cara di bawah ini:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Contact Info -->
+                <div>
+                    <div class="bg-blue-600 rounded-xl p-6 shadow-lg">
+                        <h3 class="text-xl font-bold mb-4">Info Kontak</h3>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-2 flex items-center">
+                                <i class="fas fa-map-marker-alt mr-3 text-orange-400"></i> Alamat
+                            </h4>
+                            <p>Jl. H. Najih No.79c, RT.9/RW.1, Petukangan Utara, Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12260</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-2 flex items-center">
+                                <i class="fas fa-phone-alt mr-3 text-orange-400"></i> Telepon/WhatsApp
+                            </h4>
+                            <a href="https://wa.me/6281310656020" class="hover:text-orange-300">+6281310656020</a>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-2 flex items-center">
+                                <i class="fas fa-envelope mr-3 text-orange-400"></i> Email
+                            </h4>
+                            <a href="assidikgroup@gmail.com" class="hover:text-orange-300">assidikgroup@gmail.com</a>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-2 flex items-center">
+                                <i class="fas fa-clock mr-3 text-orange-400"></i> Jam Operasional
+                            </h4>
+                            <p>Senin - Jumat: 09.00 - 21.00 WIB</p>
+                            <p>Sabtu: 10.00 - 20.00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <div class="bg-blue-600 rounded-xl p-6 shadow-lg">
+                        <h3 class="text-xl font-bold mb-4">Media Sosial</h3>
+                        <p class="text-gray-300 mb-4">Ikuti kami di media sosial untuk update terbaru dan penawaran spesial:</p>
+                        
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/percetakanassidik" class="text-white hover:text-orange-300 transition duration-300">
+                                <i class="fab fa-facebook-f fa-lg"></i>
+                            </a>
+                            <a href="https://www.instagram.com/cetakseragamcipadu?igsh=MzVpNTN0ZXFoN2M=" class="text-white hover:text-orange-300 transition duration-300">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/silvia-masdavera-23aa54265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-white hover:text-orange-300 transition duration-300">
+                                <i class="fab fa-linkedin-in fa-lg"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@assidikcreative?_t=ZS-8yea2nQDeBV&_r=1" class="text-white hover:text-orange-300 transition duration-300">
+                                <i class="fab fa-tiktok fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8 zoom">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2023 Percetakan Assidik. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
